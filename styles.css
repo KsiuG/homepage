@@ -13,8 +13,8 @@ body {
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #5c688e8f;
+    --text-decoration-color: #5c688e;
 }
 
 .container {
@@ -47,6 +47,32 @@ body {
     border-bottom: 3px solid var(--border-color);
     padding-bottom: 30px;
     margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_info_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block_header {
+    color: var(--secondary-text-color);
+    margin-bottom: 15px;
+}
+
+.i_love,
+.i_hate {
+    width: 50%;
+}
+
+.timeline {
+    list-style-type: none;
+}
+
+.timeline_year {
+    font-weight: bold;
 }
 
 @media screen and (max-width: 576px) {
@@ -69,12 +95,6 @@ body {
     }
 }
 
-/* Contact info styles */
-.contact-info__header,
-.contact-info__sub-header {
-    text-align: center;
-}
-
 .contact-info__header {
     color: var(--primary-text-color);
     margin-bottom: 15px;
@@ -90,7 +110,7 @@ body {
 .contact-info__block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .contact-info__block--center {
@@ -126,8 +146,8 @@ body {
 
 .contact-info__avatar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
@@ -161,12 +181,6 @@ body {
     text-align: justify;
 }
 
-.skills__header {
-    color: var(--secondary-text-color);
-    text-align: center;
-    margin-bottom: 15px;
-}
-
 .skills__text {
     color: var(--secondary-text-color);
     text-align: justify;
@@ -178,10 +192,9 @@ body {
     margin-right: 50px;
 }
 
-.experiences__header {
-    color: var(--secondary-text-color);
-    text-align: left;
+.experiences__company-header {
     margin-bottom: 20px;
+
 }
 
 .experiences__company-header-durability {
@@ -194,9 +207,7 @@ body {
 .experiences__company-header-name {
     color: var(--primary-text-color);
     text-decoration-color: var(--text-decoration-color);
-    text-decoration-line: underline;
     text-align: left;
-    margin-bottom: 20px;
 }
 
 .experiences__company-project {
@@ -265,4 +276,13 @@ body {
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+.skill_box {
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 15px;
+    margin: 0 5px;
+    background: rgba(125, 95, 255, 0.1);
+    border-radius: 133px;
 }
